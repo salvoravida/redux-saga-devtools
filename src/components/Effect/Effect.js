@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react'
+import PropTypes from 'prop-types';
+import React from 'react';
 import styled from 'styled-components'
 import { is, asEffect } from 'redux-saga/utils'
 import { Row, Cell } from '../Layout'
@@ -144,7 +145,7 @@ class Effect extends React.Component {
 
     else {
       nodes = nodes.concat(
-        renderEffectType('Unkown'),
+        renderEffectType('Unknown'),
         this.renderResult(status, result, error, winner),
       )
     }
